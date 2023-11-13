@@ -1,0 +1,30 @@
+.topButton {
+  position: fixed;
+  bottom: 5px;
+  right: 150px;
+  width: 94px;
+  height: 94px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: 800;
+  opacity: 0;
+  transition: opacity 100ms ease-in;
+}
+
+.topButton.show {
+  opacity: 1;
+}
+/* =================MOBILE================= */
+@media screen and (max-width: 767.8px) {
+  .topButton{
+    width: 72px;
+    height: 72px;
+    bottom: 18px;
+    right: 132px;
+  }
+}

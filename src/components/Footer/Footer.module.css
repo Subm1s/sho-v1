@@ -1,0 +1,113 @@
+.linkWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 50%;
+  padding: 44px 0;
+}
+.mediaWithNumber{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 140px;
+  align-items: center;
+}
+.numberFooter{
+  font-size: 32px;
+  line-height: normal;
+  color: #d9d9d9;
+}
+.socialMedia_link {
+  text-decoration: none;
+  color: #d9d9d9;
+}
+.socialMedia {
+  display: flex;
+}
+.services {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 150px;
+}
+.services__item{
+  margin-right: 100px;
+}
+.socialMedia__item:not(:last-child) {
+  margin-right: 16px;
+}
+.services__itemLink {
+  font-size: 32px;
+  line-height: normal;
+}
+.socialMediaLogo {
+  width: 50px;
+}
+.footer > div {
+  border-right: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+}
+
+/* ====================TABLET================= */
+@media screen and (max-width: 940px) {
+  .services__itemLink {
+    font-size: 18px;
+    line-height: normal;
+    margin-right: 35px;
+  }
+  .mediaWithNumber{
+    height: 100px;
+  }
+  .numberFooter{
+    font-size: 24px;
+  }
+  .linkWrapper {
+    padding: 32px 16px;
+  }
+  .services{
+    display: flex;
+    flex-wrap: wrap;
+    height: 120px;
+  }
+  .services__itemLink{
+    font-size: 22px;
+  }
+  .services__item{
+    margin-right: 32px;
+    margin-bottom: 4px;
+  }
+}
+
+/* ======================MOBILE================== */
+
+@media screen and (max-width: 767px) {
+  .linkWrapper {
+    padding: 15px;
+    width: 80%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 116px;
+  }
+  .services{
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .services__item{
+    width: 40%;
+  }
+  .socialMedia{
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 16px;
+  }
+  .services__itemLink{
+    margin-right: 0;
+  }
+}

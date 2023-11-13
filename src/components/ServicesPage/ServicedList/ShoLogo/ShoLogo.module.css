@@ -1,0 +1,13 @@
+.logo {
+  width: 140px;
+  transform: rotateZ(90deg);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+/* ===================MOBILE======================= */
+@media screen and (max-width: 767px) {
+  .logo {
+    width: 70px;
+  }
+}

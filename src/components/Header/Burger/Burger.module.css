@@ -1,0 +1,136 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  /* z-index: 999; */
+  transition: transform 500ms ease-in-out;
+
+  background-color: rgba(0, 0, 0, 0.188);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+}
+.line:not(:last-child) {
+  margin-bottom: 8px;
+}
+.line {
+  width: 50px;
+  height: 4px;
+  background-color: #d9d9d9;
+  border-radius: 15px;
+}
+.lineWrapper {
+  cursor: pointer;
+}
+.nav {
+  background-color: rgba(139, 23, 174, 0.951);
+  width: 50vw;
+  height: 100vh;
+}
+.backdrop.open {
+  transform: translateX(0%);
+  z-index: 999;
+}
+.exit {
+  font-size: 50px;
+  color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+  padding: 21px;
+  line-height: 50px;
+}
+.listNAV > li > a,
+.itemDropDown > a {
+  display: block;
+  width: 100%;
+}
+/* ================DROPDOWN LIST=================== */
+.posluhyItem {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.listNAV > li > a,
+.listNAV > li > p {
+  font-size: 20px;
+}
+.itemDropDown:not(:last-child) {
+  margin-bottom: 14px;
+}
+.itemDropDown > a {
+  font-size: 20px;
+}
+.listLink {
+  max-height: 0;
+  overflow: hidden;
+  background-color: rgb(89, 12, 122);
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 10px;
+}
+
+.listLink.drop {
+  max-height: 500px;
+  padding: 15px;
+}
+.arrow {
+  transform: rotateZ(0deg);
+  transition: transform 400ms linear;
+}
+.arrow.rotate {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+.listNAV > li {
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 24px;
+}
+.socialMediaList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialMediaItem:not(:last-child) {
+  margin-right: 24px;
+}
+/* ===========TABLET======================= */
+@media screen and (max-width: 940px) {
+  .nav {
+    width: 30vw;
+  }
+  .listNAV {
+    padding: 20px;
+    padding-top: 0;
+    text-transform: uppercase;
+  }
+  .line {
+    width: 42px;
+  }
+  .line:not(:last-child) {
+    margin-bottom: 6px;
+  }
+}
+
+/* ==================MOBILE================ */
+@media screen and (max-width: 767px) {
+  .nav {
+    width: 70vw;
+    height: 100vh;
+  }
+  .listNAV {
+    padding: 20px;
+    padding-top: 0;
+    text-transform: uppercase;
+  }
+  .line {
+    width: 42px;
+  }
+  .line:not(:last-child) {
+    margin-bottom: 6px;
+  }
+}

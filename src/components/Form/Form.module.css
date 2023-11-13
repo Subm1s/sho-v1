@@ -1,0 +1,269 @@
+.section {
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+}
+.section > div {
+  border-right: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+  padding-top: 105px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.mainFrom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.svgBgDesktop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  z-index: -1;
+  width: 724px;
+}
+.svgBgMobile{
+  display: none;
+}
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 47px;
+  padding-top: 72px;
+  position: relative;
+  width: 724px;
+  margin-top: 18px;
+}
+.formTitle {
+  font-size: 50px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-bottom: 34px;
+  text-transform: uppercase;
+  position: relative;
+  color: #f4ff25;
+}
+.formLabel {
+  font-size: 32px;
+  text-align: center;
+  width: 100%;
+}
+.inputName {
+  width: 620px;
+  padding: 32px 16px;
+  background-color: transparent;
+  border: none;
+  border: 2px solid #d9d9d9;
+  color: #d9d9d9;
+  font-size: 20px;
+  margin-bottom: 14px;
+  margin-top: 60px;
+}
+.inputName::placeholder {
+  font-size: 20px;
+  color: #d9d9d9;
+}
+.inputNumber::placeholder {
+  font-size: 20px;
+  color: #d9d9d9;
+}
+.inputNumber {
+  width: 620px;
+  padding: 32px 16px;
+  background-color: transparent;
+  border: none;
+  border: 2px solid #d9d9d9;
+  margin-bottom: 88px;
+  color: #d9d9d9;
+  font-size: 20px;
+}
+.submitButton {
+  background-color: transparent;
+  width: 300px;
+  border: 3px solid #d9d9d9;
+  color: #d9d9d9;
+  font-size: 16px;
+  padding: 32px 0;
+  text-transform: uppercase;
+  box-shadow: 8px 8px 0px 0px rgba(221, 139, 246, 0.3),
+    10px 10px 0px -4px rgb(11, 4, 13, 1);
+  transition: color 0.3s ease-in-out, border 0.3s ease-in-out,
+    background 0.3s ease-in-out;
+}
+.submitButton:hover {
+  border: 3px solid #cb6de7;
+  background: #fdf6ff;
+  box-shadow: none;
+  color: #9920bc;
+}
+.submitButton:active {
+  border: 3px solid #cb6de7;
+  background: #cb6de7;
+}
+/* =================TABLET================== */
+@media screen and (max-width: 940px) {
+  .formWrapper {
+    padding-right: 0;
+    margin-top: -10px;
+  }
+  .formTitle {
+    font-size: 44px;
+    margin-bottom: 16px;
+  }
+  .formLabel {
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .inputName {
+    font-size: 16px;
+    width: 395px;
+    margin-top: 15px;
+  }
+  .inputName::placeholder {
+    font-size: 16px;
+  }
+  .inputNumber::placeholder {
+    font-size: 16px;
+    color: #d9d9d9;
+  }
+  .inputNumber {
+    width: 395px;
+    margin-bottom: 40px;
+    color: #d9d9d9;
+    font-size: 16px;
+  }
+  .svgBgDesktop {
+    width: 490px;
+  }
+  .formWrapper {
+    width: 490px;
+    padding-left: 0;
+  }
+  .submitButton {
+    background-color: transparent;
+    width: 210px;
+    border: 3px solid #d9d9d9;
+    color: #d9d9d9;
+    font-size: 14px;
+    padding: 21px 0;
+  }
+}
+
+/* ===================MOBILE====================== */
+
+@media screen and (max-width: 767px) {
+  .formTitle {
+    font-size: 38px;
+  }
+  .section > div{
+    border-right: 0px solid #d9d9d9;
+    border-left: 0px solid #d9d9d9;
+  }
+
+  .formLabel {
+    width: 296px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .svgBgDesktop {
+    display: none;
+  }
+  .svgBgDesktop.svgBgShow{
+    display: block;
+    width: 330px;
+  }
+  .svgBgMobile {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 360px;
+  }
+  .inputName {
+    display: flex;
+    width: 279.921px;
+    height: 40.634px;
+    padding: 14.947px 7.474px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5.979px;
+    border-radius: 2.709px 2.709px 0px 0px;
+    border-bottom: 0.903px solid #d9d9d9;
+  }
+  .inputNumber {
+    display: flex;
+    width: 279.921px;
+    height: 40.634px;
+    padding: 14.947px 7.474px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5.979px;
+    border-radius: 2.709px 2.709px 0px 0px;
+    border-bottom: 0.903px solid #d9d9d9;
+  }
+  .submitButton {
+    display: flex;
+    width: 220px;
+    height: 64px;
+    padding: 14.947px 28.4px;
+    justify-content: center;
+    align-items: center;
+    border: 1.354px solid #d9d9d9;
+    box-shadow: 3.61188px 3.61188px 0px 0px rgba(221, 139, 246, 0.3);
+  }
+  .formWrapper{
+    width: 200px;
+  }
+}
+
+/* ============MODAL=========== */
+.backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  scale: 0.7;
+  visibility: hidden;
+}
+.modal {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d9d9d9;
+  transition: scale 250ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.backdrop.open {
+  scale: 1;
+  visibility: visible;
+}
+.modalText {
+  color: darkblue;
+}
+@media screen and (max-width: 767px) {
+  .modal {
+    width: 70vw;
+    height: 150px;
+  }
+}

@@ -1,0 +1,122 @@
+.fab {
+  position: fixed;
+  right: 65px;
+  bottom: 38px;
+  border-radius: 50%;
+}
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.fab > button {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+  border: 0;
+  background-color: #7352ff;
+  color: #f9f9f9;
+  transition: 200ms;
+}
+.menu {
+  position: absolute;
+  bottom: 76px;
+  left: 0;
+  display: grid;
+  place-content: center;
+  gap: 12px;
+  width: 64px;
+  scale: 0;
+  transform: translateX(-28%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 375ms;
+}
+.fab.open .menu {
+  scale: 1;
+  translate: 0;
+  opacity: 1;
+  visibility: visible;
+}
+.menu > button {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: rgba(139, 23, 174, 0.951);
+  color: #e0e0e0;
+  transition: 300ms;
+}
+.menu > button:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+.yellowCircle {
+  width: 94px;
+  height: 94px;
+  border: 3px solid yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -48%);
+  border-radius: 50%;
+}
+.violetCircle {
+  width: 94px;
+  height: 94px;
+  border: 3px solid violet;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -50%);
+  border-radius: 50%;
+}
+.contactDesktop {
+  position: relative;
+  background-color: transparent;
+}
+.contactDesktopText {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateX(-130%) translateY(-50%);
+  background-color: violet;
+  padding: 15px;
+  font-size: 20px;
+  color: #0b0a0a;
+  border: none;
+  border-radius: 15px;
+  visibility: hidden;
+  opacity: 0;
+  scale: 0.7;
+  transition: opacity 300ms, visibility 300ms, scale 300ms;
+}
+.contactDesktopText.show {
+  visibility: visible;
+  opacity: 1;
+  scale: 1;
+}
+/* ============================MOBILE==================== */
+
+@media screen and (max-width: 767px) {
+  .violetCircle {
+    width: 72px;
+    height: 72px;
+    border: 2px solid violet;
+  }
+  .yellowCircle {
+    width: 72px;
+    height: 72px;
+    border: 2px solid yellow;
+  }
+  .fab > button {
+    width: 72px;
+    height: 72px;
+  }
+}

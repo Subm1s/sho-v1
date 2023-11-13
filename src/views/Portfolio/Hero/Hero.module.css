@@ -1,0 +1,145 @@
+.section {
+  border-bottom: 1px solid #d9d9d9;
+}
+.section > div {
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+  display: flex;
+}
+.descriptionWrapper {
+  display: flex;
+}
+.mainTitle {
+  position: relative;
+  border-left: 5px solid #f4ff25;
+  border-right: 5px solid #f4ff25;
+  border-bottom: 5px solid #f4ff25;
+}
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) rotateZ(-90deg);
+  text-transform: uppercase;
+  color: #d9d9d9;
+  font-size: 80px;
+  font-weight: 600;
+}
+.circleTextWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  margin-top: 82px;
+  margin-left: 114px;
+}
+.circleText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.quoteBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  padding-bottom: 54px;
+}
+.quote {
+  font-size: 26px;
+  line-height: 27px;
+}
+.quoteMain {
+  font-size: 47px;
+  font-weight: 800;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+/* Small desktop */
+@media screen and (max-width: 1359.8px) {
+  .descriptionWrapper {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .circleTextWrapper {
+    display: flex;
+    margin-top: 0px;
+    margin-left: 0px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  .quoteBlock {
+    padding: 0 27px 19px;
+  }
+  .quoteMain {
+    font-size: 32px;
+  }
+}
+/* TABLET */
+@media screen and (max-width: 940px) {
+  .mainTitle > img {
+    width: 256px;
+  }
+  .title {
+    font-size: 64px;
+  }
+  .quoteMain {
+    flex-direction: column;
+    font-size: 32px;
+  }
+  .arrowHero {
+    align-self: flex-start;
+    display: block;
+    transform: translateX(-90%) translateY(200%);
+  }
+  .circleTextWrapper {
+    margin-top: 72px;
+  }
+}
+/* MOBILE */
+@media screen and (max-width: 767px) {
+  .mainTitle > img {
+    width: 200px;
+  }
+  .mainTitle {
+    height: 368px;
+  }
+  .circleText {
+    width: 142px;
+    height: 142px;
+  }
+  .heroStar {
+    width: 100px;
+    height: 100px;
+  }
+  .descriptionWrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .circleTextWrapper {
+    margin-top: 130px;
+   margin-bottom: 150px;
+  }
+  .title {
+    font-size: 44px;
+  }
+  .quoteBlock {
+    margin-left: -220px;
+  }
+  .quoteMain {
+    flex-direction: column;
+  }
+  .quote {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .arrowHero{
+    transform: translateX(-40%) translateY(300%);
+    scale: 0.8;
+  }
+}

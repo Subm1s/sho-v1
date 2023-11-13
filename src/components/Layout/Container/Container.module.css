@@ -1,0 +1,25 @@
+.Container {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1360px) {
+  .Container {
+    width: 1211px;
+  }
+}
+@media screen and (max-width: 1359.8px) {
+  .Container {
+    width: 900px;
+  }
+}
+@media screen and (max-width: 940px) {
+  .Container {
+    width: 760px;
+  }
+}
+  
+@media screen and (max-width: 767px) {
+  .Container {
+    width: 342px;
+  }
+}

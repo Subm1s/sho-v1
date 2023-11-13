@@ -1,0 +1,24 @@
+.yearText {
+  display: inline-block;
+  font-size: 80px;
+  font-weight: 400;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  margin-left: 20px;
+}
+.svgYear {
+  transform: rotateZ(90deg);
+}
+/* =========TABLET================== */
+@media screen and (max-width: 940px) {
+  .yearText {
+    font-size: 64px;
+    margin-left: 0;
+  }
+}
+/* ====================MOBILE================= */
+@media screen and (max-width: 767px) {
+  .yearText {
+    font-size: 54px;
+  }
+}

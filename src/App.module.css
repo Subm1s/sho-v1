@@ -1,0 +1,49 @@
+.violetGradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1403px;
+  height: 597px;
+  transform: rotate(-23.173deg) translateX(-50%) translateY(-50%);
+  border-radius: 1403px;
+  background: rgba(255, 157, 220, 0.2);
+  filter: blur(200px);
+  overflow: hidden;
+  max-width: 100%;
+  z-index: -1;
+}
+.yellowGradient {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: rotate(-23.173deg) translateX(-50%) translateY(-50%);
+  width: 686px;
+  height: 686px;
+  border-radius: 686px;
+  background: rgba(244, 255, 37, 0.2);
+  filter: blur(200px);
+  overflow: hidden;
+  max-width: 100%;
+  z-index: -1;
+}
+.yellowGradientTwo {
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  transform: rotate(-23.173deg) translateX(-50%) translateY(-50%);
+  width: 686px;
+  height: 686px;
+  border-radius: 686px;
+  background: rgba(244, 255, 37, 0.2);
+  filter: blur(200px);
+  overflow: hidden;
+  max-width: 100%;
+  z-index: -1;
+}
+.violetGradientTwo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 100%;
+  z-index: -1;
+}

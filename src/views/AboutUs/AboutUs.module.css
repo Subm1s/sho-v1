@@ -1,0 +1,316 @@
+.aboutUsSection > div {
+  border-right: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+  position: relative;
+}
+.titleAboutUs {
+  color: #d9d9d9;
+  text-shadow: 3px 3px 0px #cb6de7;
+  font-family: Nunito;
+  font-size: 116px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  -webkit-text-stroke: 3px #231f20;
+}
+.heroImg {
+  width: 100%;
+  height: 752px;
+  object-fit: cover;
+  filter: grayscale(0%);
+}
+.textHeroWrapper {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 132px;
+  margin-bottom: -70px;
+}
+.iconStar {
+  position: absolute;
+  bottom: 58px;
+  left: 69px;
+}
+.titleAboutUsSho {
+  color: #d9d9d9;
+  font-size: 71px;
+  font-style: italic;
+  font-weight: 500;
+  align-self: flex-end;
+}
+.heroTop {
+  display: flex;
+  flex-direction: column;
+  padding-right: 241px;
+  padding-left: 38px;
+}
+.welcomeText {
+  position: absolute;
+
+  font-size: 80px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 100px; /* 125% */
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%) rotateZ(180deg);
+  writing-mode: vertical-rl;
+}
+/* =================================Our Opportunity======================= */
+.opportunitySection {
+  border-bottom: 1px solid #d9d9d9;
+}
+.opportunitySection > div {
+  padding-left: 24px;
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+  padding-top: 70px;
+}
+.lineRunWrapper {
+  display: flex;
+  align-items: center;
+  transform: translateY(50%);
+}
+.line {
+  width: 840px;
+  height: 17px;
+  border-right: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+  margin-left: 3px;
+  margin-right: 21px;
+}
+.lineTop {
+  height: 50%;
+}
+.lineBottom {
+  background-color: #d9d9d9;
+  height: 1px;
+}
+.runningMan {
+  color: #d99bff;
+}
+.blockOpportunity {
+  display: flex;
+}
+.leftSide {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #d9d9d9;
+  padding: 68px 40px;
+}
+.leftSideTitle {
+  color: #d9d9d9;
+  font-size: 44px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 53px;
+}
+
+.rightSide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding-left: 30px;
+}
+.imageCircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.textWrapper {
+  display: flex;
+}
+.findText {
+  color: #cb6de7;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 45px; /* 80.357% */
+  letter-spacing: 1.68px;
+  width: 265px;
+}
+.logo {
+  transform: rotateZ(-90deg);
+  width: 150px;
+}
+/* ===================SMALL DESKTOP=============== */
+@media screen and (max-width: 1359px) {
+  .heroImg{
+    object-fit: contain;
+    margin-top: -80px;
+  }
+  .leftSideTitle{
+    font-size: 40px;
+  }
+  .imageCircle{
+    width: 400px;
+  }
+  .findText{
+    font-size: 44px;
+  }
+  .textWrapper{
+    margin-left: -48px;
+    margin-bottom: -20px
+  }
+}
+/* ===================TABLET==================== */
+@media screen and (max-width: 940px) {
+  .titleAboutUs {
+    font-size: 72px;
+    margin-bottom: 36px;
+  }
+  .titleAboutUsSho {
+    font-size: 54px;
+    align-self: flex;
+  }
+  .heroTop {
+    display: flex;
+    flex-direction: column;
+    padding-left: 38px;
+    padding-right: 55px;
+  }
+  .iconStar {
+    position: absolute;
+    bottom: 26px;
+    left: 26px;
+    width: 76px;
+  }
+  .textHeroWrapper {
+    padding-top: 26px;
+    padding-bottom: 30px;
+    margin-bottom: -80px;
+  }
+  .welcomeText {
+    font-size: 44px;
+    line-height: normal;
+    transform: translateX(-50%) rotateZ(180deg);
+  }
+  .heroImg {
+    width: 90%;
+    margin-left: 10%;
+    height: 452px;
+    object-fit: contain;
+    transform: translateY(10%);
+  }
+
+  /* =================================Our Opportunity======================= */
+
+  .blockOpportunity {
+    display: block;
+    position: relative;
+  }
+  .leftSide {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-right: none;
+    padding: 0;
+    padding-top: 93px;
+    margin-top: 26px;
+    padding-bottom: 76px;
+  }
+  .rightSide {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    display: flex;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+    align-items: center;
+    width: 265px;
+    height: 265px;
+  }
+  .findText {
+    font-size: 32px;
+    line-height: 25px;
+    width: 154px;
+  }
+  .imageCircle {
+    width: 265px;
+  }
+  .logo {
+    transform: rotateZ(-90deg);
+    width: 90px;
+  }
+  .textWrapper {
+    margin-left: -30px;
+    align-items: center;
+  }
+  .leftSideTitle {
+    font-size: 32px;
+    margin-bottom: 17px;
+    align-self: flex-start;
+  }
+}
+/* =============MOBILE=============== */
+@media screen and (max-width: 767px) {
+  .titleAboutUs {
+    font-size: 44px;
+    -webkit-text-stroke: 1px #231f20;
+    margin-bottom: 0;
+  }
+  .heroTop {
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-bottom: 40px;
+  }
+  .titleAboutUsSho {
+    font-size: 26px;
+    margin-top: 16px;
+  }
+  .iconStar {
+    width: 42px;
+    bottom: 0;
+  }
+  .lineRunWrapper {
+    display: none;
+  }
+  .blockOpportunity {
+    margin-top: 54px;
+  }
+  .rightSide {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .blockOpportunity {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .textWrapper {
+    margin-left: -28%;
+  }
+  .leftSideTitle {
+    font-size: 24px;
+    margin-top: 0;
+    padding-top: 20px;
+  }
+  .welcomeText {
+    display: none;
+  }
+  .heroImg{
+    object-fit: cover;
+    width: 100%;
+    height: 240px;
+    margin-left: 0;
+    margin-top: -30px;
+  }
+  .textHeroWrapper{
+    margin-bottom: -70px;
+  }
+}

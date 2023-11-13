@@ -1,0 +1,43 @@
+.list {
+  list-style-type: disc;
+}
+.listItem:not(:last-child) {
+  margin-bottom: 38px;
+}
+.listItemText {
+  color: #d9d9d9;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* ==================SMALL DESKTOP============== */
+@media screen and (max-width: 1359px) {
+  .listItemText{
+    font-size: 22px;
+  }
+}
+/* ==================TABLET==================== */
+
+@media screen and (max-width: 940px) {
+  .listItem:nth-child(1) {
+    width: 55%;
+  }
+}
+
+/* ================MOBILE=============== */
+
+@media screen and (max-width: 767px) {
+  .listItem:nth-child(1) {
+    width: 100%;
+  }
+  .listItem{
+    padding: 5px;
+  }
+  .listItemText {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .listItem:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

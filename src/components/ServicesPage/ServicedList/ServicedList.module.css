@@ -1,0 +1,49 @@
+.opportunitySection {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+.opportunitySection > div {
+  display: flex;
+}
+/* ===================SMALL DESKTOP========== */
+@media screen and (max-width: 1359px) {
+  
+}
+/* ===================TABLET================ */
+@media screen and (max-width: 940px) {
+  .opportunitySection > div{
+    padding: 50px 0px;
+    border-left:1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+  }
+}
+/* ===================Mobile================ */
+@media screen and (max-width: 767px) {
+  .opportunitySection > div{
+    padding: 14px 0;
+  }
+  .opportunitySection.columnList > div {
+    flex-direction: column;
+    width: 342px;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+  }
+  .opportunitySection.columnList > div > div {
+    writing-mode: horizontal-tb;
+    width: 100%;
+    transform: rotateZ(360deg);
+    border: none;
+  }
+  .opportunitySection.columnList > div > div > img {
+    transform: rotateZ(0deg);
+  }
+  .opportunitySection.columnList > div > ul {
+    width: 342px;
+  }
+  .opportunitySection.columnList > div > ul > li {
+    padding: 0 15px;
+  }
+  .opportunitySection.columnList > div > ul > li > h3 {
+    width: auto;
+  }
+}

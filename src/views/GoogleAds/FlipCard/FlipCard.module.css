@@ -1,0 +1,195 @@
+.cardSection > div {
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+  padding-top: 216px;
+  padding-bottom: 230px;
+  position: relative;
+}
+.cardList {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  width: 340px;
+  height: 508px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.firstCard {
+  border: 4px solid #6d6c6d;
+}
+.cardItem {
+  width: 340px;
+}
+.cardTitle {
+  font-size: 97px;
+  font-weight: 700;
+  line-height: 82px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.topText {
+  line-height: 82px;
+}
+.bottomText {
+  line-height: 82px;
+  color: #6d6c6d;
+}
+.clickButton {
+  border: 3px solid #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 0;
+  margin-top: 22px;
+  cursor: pointer;
+}
+.clickButtonText {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+.priceText{
+  font-size: 23px;
+}
+
+.secondCard {
+  border: 4px solid #f4ff25;
+}
+.topTextSecond {
+  color: #f4ff25;
+  line-height: 46px;
+}
+.bottomTextSecond {
+  line-height: 46px;
+}
+.cardTitleSecond {
+  line-height: 46px;
+}
+.bottomTextThird {
+  color: #d9d9d9;
+  line-height: 82px;
+}
+.topTextThird {
+  color: #cb6de7;
+  line-height: 82px;
+}
+.thirdCard {
+  border: 4px solid #cb6de7;
+}
+.backSide {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.listMoreItem {
+  font-size: 13px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.listMoreItem > svg {
+  flex-shrink: 0;
+}
+.listMoreItem:not(:last-child) {
+  margin-bottom: 16px;
+}
+.circleText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-29%) translateY(-5%);
+}
+/* =====================SMALL DESKTOP======= */
+@media screen and (max-width: 1359px) {
+  .cardSection > div{
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+  .cardList{
+    flex-wrap: wrap;
+  }
+  .cardList:last-child .cardItem{
+    margin-top: 60px;
+  }
+}
+/* =====================TABLET============== */
+@media screen and (max-width: 940px) {
+  .cardSection > div {
+    padding-top: 148px;
+    padding-bottom: 72px;
+  }
+  .cardList {
+    flex-wrap: wrap;
+  }
+  .cardList:last-child .listMoreItem {
+    font-size: 11px;
+  }
+  .circleText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-29%) translateY(-5%);
+    width: 80%;
+  }
+  .card {
+    width: 260px;
+    height: 400px;
+  }
+  .cardItem {
+    width: 260px;
+  }
+  .cardItem:not(:last-child) {
+    margin-bottom: 44px;
+  }
+  .cardTitle {
+    font-size: 68px;
+    line-height: 50px;
+  }
+  .topText {
+    line-height: 50px;
+  }
+  .bottomText {
+    line-height: 50px;
+  }
+  .clickButton {
+    padding: 23px 10px;
+    margin-top: 8px;
+  }
+  .clickButtonText {
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-right: 0px;
+  }
+  .bottomTextSecond,
+  .cardTitleSecond,
+  .bottomTextThird,
+  .topTextThird {
+    line-height: 32px;
+  }
+  .listMoreItem {
+    font-size: 12px;
+  }
+  .listMoreItem:not(:last-child) {
+    margin-bottom: 5px;
+  }
+}
+
+/* ========================MOBILE================== */
+
+@media screen and (max-width: 767px) {
+  .cardSection {
+    overflow: hidden;
+  }
+  .circleText{
+    width: 90%;
+    top: 0px;
+    left: 24px;
+  }
+  .cardSection > div {
+    padding-top: 100px;
+  }
+}

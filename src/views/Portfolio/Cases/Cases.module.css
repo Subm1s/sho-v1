@@ -1,0 +1,69 @@
+.casesSection {
+  overflow: hidden;
+}
+.casesSection > div {
+  border-right: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+  padding-top: 100px;
+  padding-bottom: 140px;
+  overflow: visible;
+}
+.casesList {
+  margin-bottom: 100px;
+}
+.showMoreButton {
+  color: #d9d9d9;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 33px; /* 137.5% */
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: 205px;
+  justify-content: center
+  ;
+}
+.gradientButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+}
+.showMoreButton::before {
+  content: url(../../../assets/portfolioCases/starForButton.svg);
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: -110%;
+  left: -85%;
+  offset-path: path(
+    "M0.517887 67.2007C0.37246 63.6624 2.06507 60.0722 5.55375 56.4639C9.0426 52.8555 14.2871 49.2737 21.1325 45.7709C34.8205 38.7667 54.803 32.1317 79.6289 26.2243C129.273 14.4113 198.183 5.53125 274.588 2.39091C350.992 -0.749417 420.399 2.44573 470.844 10.1449C496.072 13.9951 516.531 18.9679 530.748 24.8251C537.857 27.7543 543.378 30.8937 547.151 34.2036C550.924 37.5134 552.906 40.9526 553.051 44.4909C553.197 48.0292 551.504 51.6194 548.016 55.2276C544.527 58.8361 539.282 62.4179 532.437 65.9207C518.749 72.9248 498.766 79.5598 473.94 85.4673C424.296 97.2802 355.387 106.16 278.982 109.301C202.577 112.441 133.171 109.246 82.7248 101.547C57.4978 97.6965 37.0382 92.7237 22.8216 86.8665C15.7119 83.9373 10.1911 80.7979 6.41786 77.4879C2.64484 74.1781 0.663314 70.7389 0.517887 67.2007Z"
+  );
+  animation: followpath 12s linear infinite;
+}
+@keyframes followpath {
+  to {
+    offset-distance: 100%;
+  }
+}
+/* mobile */
+@media screen and (max-width: 767px) {
+  .gradientButton {
+    width: 330px;
+  }
+  .showMoreButton::before {
+    offset-path: ellipse(85% 85% at 50% 50%);
+    motion-path: ellipse(85% 85% at 50% 50%);
+    animation: followpath 8s linear infinite;
+  }
+  .casesSection > div {
+    border-right: 0px solid #d9d9d9;
+    border-left: 0px solid #d9d9d9;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}

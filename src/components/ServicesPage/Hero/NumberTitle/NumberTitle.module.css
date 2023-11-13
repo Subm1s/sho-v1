@@ -1,0 +1,99 @@
+.pageNumberWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-end;
+  margin-right: 136px;
+  z-index: 1;
+}
+.pageNumber {
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.numberWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lineWrapper {
+  height: 7px;
+  display: flex;
+  justify-content: center;
+}
+.line {
+  height: 7px;
+  width: 10px;
+  background-color: #cb6de7;
+}
+.line:not(:last-child) {
+  margin-right: 20px;
+}
+.insideLine {
+  width: 20px;
+}
+.bottomLine {
+  height: 7px;
+  width: 80px;
+  background-color: #f4ff25;
+  display: flex;
+  justify-content: center;
+  margin-top: 7px;
+}
+.pageNumberTitle {
+  margin-top: 60px;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  transform: rotateZ(180deg);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   text-shadow: 
+    1px 0 0 black, /*right */
+    0 1px 0 black, /*top */
+    -1px 0 0 black, /*left */
+    0 -1px 0 black; /*bottom */
+}
+/* =================SMALL DESKTOP========= */
+@media screen and (max-width: 1359px) {
+  .pageNumberWrapper{
+    margin-right: 48px;
+  }
+}
+/* =================TABLET============== */
+@media screen and (max-width: 940px) {
+  .pageNumberWrapper {
+    margin-right: 36px;
+    z-index: 1;
+  }
+  .pageNumber {
+    font-size: 64px;
+  }
+  .pageNumberTitle {
+    margin-top: 38px;
+    font-size: 34px;
+  }
+}
+/* ================MOBILE============ */
+@media screen and (max-width: 767px) {
+  .pageNumber {
+    font-size: 42px;
+  }
+  .pageNumberTitle {
+    font-size: 27px;
+    margin-top: 17px;
+  }
+  .pageNumberWrapper {
+    position: absolute;
+    top: 350px;
+    right: 0;
+  }
+  .line {
+    height: 5px;
+  }
+  .bottomLine {
+    height: 5px;
+    margin-top: 5px;
+  }
+}

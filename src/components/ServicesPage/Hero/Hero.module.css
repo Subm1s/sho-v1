@@ -1,0 +1,186 @@
+.heroSection {
+  position: relative;
+  opacity: 0.99;
+}
+
+.heroSection > div {
+  display: flex;
+  /* position: relative; */
+}
+.yearRotate {
+  display: flex;
+  flex-direction: row-reverse;
+  transform: rotateZ(180deg);
+  margin-top: 200px;
+}
+.leftSide {
+  width: 414px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  padding-bottom: 124px;
+  border-left: 1px solid #d9d9d9;
+  padding-left: 44px;
+}
+.rightSide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+}
+.pageTitleWrapper {
+  align-self: flex-start;
+  position: relative;
+  display: inline-block;
+}
+.pageTitle {
+  font-size: 116px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-top: 236px;
+  display: inline-block;
+  position: relative;
+}
+.dropTitle {
+  width: 52px;
+  height: 75px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(25%) translateX(75%);
+}
+.shoSignWrapper {
+  align-self: flex-start;
+  margin-top: 150px;
+}
+.shoSign {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 54px;
+  margin-bottom: 24px;
+}
+.serviceDescription {
+  width: 753px;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+/*==================SMALL DESKTOP============ */
+@media screen and (max-width: 1359px) {
+  .leftSide{
+    padding-right: 0;
+  }
+  .rightSide{
+    width: 486px;
+  }
+  .pageTitle{
+    font-size: 80px;
+  }
+}
+/* =================TABLET=================== */
+
+@media screen and (max-width: 940px) {
+  .yearRotate {
+    margin-top: 140px;
+  }
+  .leftSide {
+    width: 215px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    box-sizing: border-box;
+  }
+  .rightSide {
+    width: 420px;
+  }
+  .pageTitle {
+    font-size: 56px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 150px;
+  }
+  .dropTitle {
+    width: 42px;
+    height: 55px;
+  }
+  .shoSignWrapper {
+    margin-top: 86px;
+  }
+  .shoSign {
+    font-size: 42px;
+    margin-bottom: 16px;
+  }
+  .serviceDescription {
+    width: 500px;
+    font-size: 22px;
+  }
+  .rightSide{
+    width: 545px;
+  }
+}
+/* ==================MOBILE============== */
+
+@media screen and (max-width: 767px) {
+  .heroSection > div {
+    position: relative;
+  }
+  .serviceDescription {
+    width: 90%;
+    font-size: 18px;
+  }
+  .shoSign {
+    font-size: 32px;
+  }
+  .leftSide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    padding-bottom: 0px;
+    border-left: none;
+    padding-left: 0px;
+    align-items: start;
+    justify-content: end;
+  }
+  .rightSide {
+    width: 100%;
+    height: 900px;
+    position: relative;
+  }
+  .yearRotate {
+    margin-bottom: auto;
+    margin-top: 100px;
+    max-height: 300px;
+  }
+  .pageTitle {
+    height: auto;
+    margin-top: 0;
+    line-height: 32px;
+    font-size: 32px;
+  }
+  .pageTitle.small{
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .pageTitleWrapper {
+    margin-top: 100px;
+  }
+  .dropTitle {
+    right: -5px;
+    bottom: -5px;
+    width: 28px;
+
+  }
+  .serviceDescription{
+    font-size: 16px;
+  }
+  .dropTitle.small{
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) translateX(65%);
+  }
+}
